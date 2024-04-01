@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo"><img id="logo__img" src="./assets/logo-24.svg" alt=""></div>
+            <div id="navList"><a class="item__text" href="">contato</a></div>
+            <button class="btn__menu" onclick="clickMenu()">
+                <img id="btn__humb" src="./assets/menu.svg" alt="">
+              </button>
+        </nav>
+    </header>
+    <main>
+        <div id="cont">
+            <div id="dsn__cont" class="stl__cont">
+                <img class="img__home" src="./assets/microphone-pop-shield-mockup-perspective.png" alt="">
+                <div class="mask"></div>
+                <a href="./pages/dsn/dsn__page.html" id="link__dsn" class="stl__link" onmouseover="hv()" >
+                    <h2 class="txt__h2">
+                        design
+                    </h2>
+                    <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow">
+                </a>
+            </div>
+            <div id="front__cont" class="stl__cont">
+                <img class="img__home" src="./assets/mokp.png" alt="">
+                <div class="mask"></div>
+                <a href="" id="link__front" class="stl__link">
+                    <h2 class="txt__h2">
+                        front-end
+                    </h2>
+                    <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow">
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
