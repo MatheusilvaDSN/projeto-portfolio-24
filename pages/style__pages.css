@@ -25,7 +25,7 @@ header {
     top: 0;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav {
@@ -45,8 +45,70 @@ nav {
     border: none;
 }
 
-.item__text{
+.menu__txt{
     display: none;
+}
+
+#menu__mb {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    height: 376px;
+    width: 100vw;
+    background-color: var(--bg-color);
+    border-bottom: 2px solid var(--text-color);
+    animation-duration: 1s;
+    animation-name: start;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes start {
+    0% { transform: translate(0%, -110%)}
+    100% { transform: translate(0%, 0%)}
+}
+
+.bg__md {
+    margin-top: 56px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mask-color);
+}
+
+#lista__mb {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    align-items: center;
+    gap: 16px;
+}
+
+.selected, .selectable {
+    overflow: hidden;
+}
+
+.mb__text{
+    display: block;
+    font-size: 36px;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 4px 8px 4px 8px;
+}
+
+.bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    transform:  translate(-110%);
+    transition: var(--transition);
+}
+
+.selected > .bar {
+    transform: translate(0%); 
+}
+
+.selectable:hover .bar{
+    transform: translate(0%);  
 }
 
 main {
@@ -121,24 +183,24 @@ main {
     padding-top: 8px;
 }
 
-.card:hover .img__card {
+.card:active .img__card {
     filter: grayscale(0);
     transform: scale(1.1);
 }
 
-.card:hover .info  {
+.card:active .info  {
     background-color: var(--text-color);
 }
 
-.card:hover .txt {
+.card:active .txt {
     color: var(--bg-color);
 }
 
-.card:hover .mask {
+.card:active .mask {
     background-color: var(--invi);
 }
 
-.card:hover .icon__arrow  {
+.card:active .icon__arrow  {
     filter: invert(100%);
 }
 
@@ -184,6 +246,9 @@ main {
         border-bottom: 2px solid var(--text-color);
     }
 
+    .menu__txt {
+        display: block;
+    }
     
     .item__text{
         display: block;
@@ -191,6 +256,15 @@ main {
         color: var(--text-color);
         text-decoration: none;
         padding: 4px 8px 4px 8px;
+    }
+
+    #lista__mb {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #menu__mb {
+        height: 152px;
     }
 
     main {
@@ -231,10 +305,31 @@ main {
         height: 48px;
         width: 48px;
     }
+
+    .card:hover .img__card {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+    
+    .card:hover .info  {
+        background-color: var(--text-color);
+    }
+    
+    .card:hover .txt {
+        color: var(--bg-color);
+    }
+    
+    .card:hover .mask {
+        background-color: var(--invi);
+    }
+    
+    .card:hover .icon__arrow  {
+        filter: invert(100%);
+    }
+
 }
 
-@media only screen and (max-width: 1157px) {
-    .item__text{
-        display: none;
-    }
+@media only screen and (max-width: 1017px) {
+
+
     }
