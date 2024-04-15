@@ -128,6 +128,7 @@ main {
     height: auto;
     text-decoration: none;
     position: relative;
+    border: solid 2px white;
 }
 
 .cont__img {
@@ -233,7 +234,7 @@ main {
         gap: 16px;
     }
 
-    #selected > .item__text {
+    /* #selected > .item__text {
         border-bottom: 2px solid var(--text-color);
     }
 
@@ -244,7 +245,7 @@ main {
 
     #selectable >.item__text:hover {
         border-bottom: 2px solid var(--text-color);
-    }
+    } */
 
     .menu__txt {
         display: block;

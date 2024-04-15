@@ -60,7 +60,6 @@ nav {
     animation-duration: 1s;
     animation-name: start;
     animation-iteration-count: 1;
-
 }
 
 @keyframes start {
@@ -113,23 +112,37 @@ nav {
 
 main {
     margin-top: 98px;
-}
-
-.cont__list {
     display: block;
     width: 100vw;
     height: auto;
     text-decoration: none;
+    position: relative;
 }
 
+/* .cont__list {
+    display: block;
+    width: 100vw;
+    height: auto;
+    text-decoration: none;
+    position: relative;
+} */
+
 .cont__cover {
-    height: 400px;
     width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
-    position: relative;
     
+}
+
+.cover {
+    position: absolute;
+    height: 400px;
+    z-index: -1;
+}
+
+.cover__txt {
+    height: 366px;
 }
 
 .cover__img {
@@ -152,28 +165,39 @@ main {
 }
 
 .tlt__cover {
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 100%;
 }
 
 .info {
+    margin-top: 16px;
     font-size: 24px;
     font-weight: 400;
+    font-style: italic;
 }
 
 .cont__info {
     display: block;
-    background-color: var(--cont-color-grey);
-    width: 100vw;
+    background-color: var(--bg-color);
     height: auto;
-    padding-bottom: 32px;
+    margin: 0px 16px 0px 16px;
+    padding: 16px 16px 16px 16px;
+    /* position: absolute;
+    top: 366px; */
+    border: solid 2px white;
 }
 
 .txt {
-    margin: 0px 16px 0px 16px;
-    padding-top: 24px;
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.btn__main {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
 }
 
 .stl__link {
@@ -183,7 +207,7 @@ main {
     text-decoration: none;
     padding: 8px 0px 8px 8px;
     border: solid 2px white;
-    margin: 24px 0px 0px 16px;
+    transition: var(--transition);
 }
 
 .txt__h2 {
@@ -191,7 +215,17 @@ main {
     font-size: 24px;
 }
 
+.stl__link:hover {
+    background-color: var(--text-color);
+}
 
+.stl__link:hover .txt__h2 {
+    color: black;
+}
+
+.stl__link:hover .icon__arrow{
+    filter: invert(100%);
+}  
 
 
 /* media quety */
@@ -223,7 +257,8 @@ main {
     }
 
     .back {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .menu__txt {
@@ -247,8 +282,15 @@ main {
         height: 152px;
     }
 
+
     main {
         margin-top: 122px
+    }
+
+    .tlt__cover {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 100%;
     }
 
     .txt__cover {
@@ -256,12 +298,8 @@ main {
     
     }
 
-    .txt {
+    .cont__info {
         margin: 0px 104px 0px 104px;
-    }
-    
-    .stl__link {
-        margin: 24px 0px 0px 104px;
     }
 
  
