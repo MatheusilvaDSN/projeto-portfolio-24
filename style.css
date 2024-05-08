@@ -41,6 +41,7 @@ nav {
     align-items: center;
     background-color: var(--invi);
     border: none;
+    cursor: pointer;
 }
 
 .item__text{
@@ -218,25 +219,34 @@ nav {
     
     #cont {
         height: 100vh;
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        flex-direction: row;
+        /* display: grid;
+        grid-template-columns: auto auto;
         grid-template-rows: 100%;
         grid-template-areas: 
         "dsn front"
-        "dsn front";
+        "dsn front"; */
     }
     
+     #dsn__cont:hover, #front__cont:hover {
+        width: 140%;
+    }
+
+
     #dsn__cont {
         grid-area: dsn;
+        transition: var(--transition);
     }
     
     #front__cont {
         grid-area: front;
+        transition: var(--transition);
     }
 
     .img__home {
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 100%;
         transform: scale(1);
     }
     

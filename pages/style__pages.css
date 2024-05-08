@@ -272,13 +272,19 @@ main {
         margin: 122px 104px 0px 104px;
     }
 
-    /* .cont__list {
-        width: 100vw;
+    .cont__list {
+        width: 100%;
     }
-     */
+
+    .cont__list {
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+    
     .card {
         display: block;
-        width: 400px;
+        width: 100%;
         height: auto;
         text-decoration: none;
     }

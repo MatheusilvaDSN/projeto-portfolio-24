@@ -10,7 +10,11 @@
     --cont-color: rgba(0, 0, 0, 0.6);
     --transition: all 0.5s;
     --mask-color: rgba(0, 0, 0, 0.7);
-    --cont-color-grey: rgba(37, 37, 37, 1);
+    --cont-color-grey: rgba(21, 21, 21, 1);
+    --sub-cont-grey:rgba(82, 82, 82, 1);
+    --css-color: rgba(1, 112, 186, 1);
+    --html-color: rgba(228, 77, 38, 1);
+    --js-color: rgba(247, 223, 30, 1);
 }
 
 
@@ -43,6 +47,7 @@ nav {
     align-items: center;
     background-color: var(--bg-color);
     border: none;
+    cursor: pointer;
 }
 
 .back {
@@ -158,9 +163,12 @@ main {
 }
 
 .txt__cover {
+    display: flex;
+    flex-direction: column;
     position: absolute; 
     margin-left: 16px;
     color: var(--text-color);
+    gap: 16px;
 
 }
 
@@ -170,22 +178,27 @@ main {
     line-height: 100%;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
 .info {
-    margin-top: 16px;
     font-size: 24px;
     font-weight: 400;
     font-style: italic;
+    color: var(--text-color);
 }
 
 .cont__info {
-    display: block;
-    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cont-color-grey);
     height: auto;
     margin: 0px 16px 0px 16px;
     padding: 16px 16px 16px 16px;
-    /* position: absolute;
-    top: 366px; */
-    border: solid 2px white;
+    gap: 24px;
 }
 
 .txt {
@@ -197,7 +210,6 @@ main {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
-    margin-top: 24px;
 }
 
 .stl__link {
@@ -227,6 +239,84 @@ main {
     filter: invert(100%);
 }  
 
+
+.cont__stl {
+    margin-top: 42px;
+}
+
+.lang {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.lang__bar {
+    display: flex;
+}
+
+.bar__stl {
+    height: 12px;
+}
+
+.lang__bar1 {
+    background-color: var(--css-color);
+    width: 53.4%;
+}
+
+.lang__bar2 {
+    background-color: var(--html-color);
+    width: 45.8%;
+}
+
+.lang__bar3 {
+    background-color: var(--js-color);
+    width: 0.8%;
+}
+
+.lang__sub {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 42px;
+}
+
+.lang__sub1 {
+    display: flex;
+    gap: 12px;
+}
+
+.lang__sub__txt {
+    display: flex;
+    gap: 16px;
+}
+
+.sub__cont {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px var(--sub-cont-grey);
+}
+
+.sub__cont__tlt {
+    padding: 16px;
+    border-bottom: solid 2px var(--sub-cont-grey);
+}
+
+.comps {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.line2 {
+    display: flex;
+}
 
 /* media quety */
 

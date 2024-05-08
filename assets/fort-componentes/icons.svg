@@ -1,0 +1,26 @@
+<svg width="144" height="24" viewBox="0 0 144 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_251_281" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_251_281)">
+<path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="white"/>
+</g>
+<mask id="mask1_251_281" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="40" y="0" width="24" height="24">
+<rect x="40" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_251_281)">
+<path d="M46.4 19L45 17.6L50.6 12L45 6.4L46.4 5L52 10.6L57.6 5L59 6.4L53.4 12L59 17.6L57.6 19L52 13.4L46.4 19Z" fill="white"/>
+</g>
+<mask id="mask2_251_281" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="80" y="0" width="24" height="24">
+<rect x="80" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask2_251_281)">
+<path d="M95 22L85 12L95 2L96.775 3.775L88.55 12L96.775 20.225L95 22Z" fill="white"/>
+</g>
+<mask id="mask3_251_281" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="120" y="0" width="24" height="24">
+<rect x="120" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask3_251_281)">
+<path d="M129.025 22L127.25 20.225L135.475 12L127.25 3.775L129.025 2L139.025 12L129.025 22Z" fill="white"/>
+</g>
+</svg>
