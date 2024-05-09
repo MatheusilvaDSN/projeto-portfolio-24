@@ -118,7 +118,7 @@ nav {
 main {
     margin-top: 98px;
     display: block;
-    width: 100vw;
+    /* width: 100vw; SEM WIDTH RETIRA BARRA DE ROLAGEM HORIZONTAL */ 
     height: auto;
     text-decoration: none;
     position: relative;
