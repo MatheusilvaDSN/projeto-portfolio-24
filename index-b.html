@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleGlobal.css">
+</head>
+<body>
+    <header id="header__pages">
+        <nav>
+            <a id="logo" href="../../index.html"><img id="logo__img" src="../../assets/logo-24.svg" alt=""></a>
+            <div class="nav__itens">
+                <button class="btn__menu" onclick="clickMenu()">
+                    <img id="btn__humb" src="../../assets/menu.svg" alt="">
+                  </button>
+            </div>
+        </nav>
+    </header>
+    <div id="menu__mb">
+        <div id="lista__mb">
+            <div class="selectable"><a class="mb__text" href="../../index.html">início</a>
+                <div class="bar"></div>
+            </div>
+            <div class="selected"><a class="mb__text" href="#">design</a>
+                <div class="bar"></div>
+            </div>
+            <div class="selectable"><a class="mb__text" href="../front/front__page.html">front-end</a>
+                <div class="bar"></div>
+            </div>
+            <div class="selectable"><a class="mb__text" href="#">contato</a>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="bg__md"></div>
+      </div>
+    <main >
+        <div id="cont">
+            <div id="dsn__cont" class="home-stl__cont">
+                <img class="img__home" src="./assets/microphone-pop-shield-mockup-perspective.png" alt="">
+                <div class="mask"></div>
+                <a href="./pages/dsn/dsn__page.html" id="link__dsn" class="stl__link" onmouseover="hv()" >
+                    <h2 class="txt__h2">
+                        design
+                    </h2>
+                    <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow">
+                </a>
+            </div>
+            <div id="front__cont" class="home-stl__cont">
+                <img class="img__home" src="./assets/mokp.png" alt="">
+                <div class="mask"></div>
+                <a href="" id="link__front" class="stl__link">
+                    <h2 class="txt__h2">
+                        front-end
+                    </h2>
+                    <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow">
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

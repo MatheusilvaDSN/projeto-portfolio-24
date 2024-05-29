@@ -7,28 +7,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../styleGlobal.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a id="logo" href="#"><img id="logo__img" src="./assets/logo-24.svg" alt=""></a>
-            <div id="navList"><a class="item__text" href="">contato</a>
-            <div class="bar"></div></div>
-            <button class="btn__menu" onclick="clickMenu()">
-                <img id="btn__humb" src="./assets/menu.svg" alt="">
-              </button>
+        <nav id="#indexNav ">
+            <a id="logo__index" href="../../index.html"><img id="logo__img" src="../../assets/logo-24.svg" alt=""></a>
+            <div class="nav__itens">
+                <button class="btn__menu" onclick="clickMenu()">
+                    <img id="btn__humb" src="../../assets/menu.svg" alt="">
+                  </button>
+            </div>
         </nav>
     </header>
-    <div id="menu__mb">
+    <div id="menu__mb" class="index__mb">
         <div id="lista__mb">
-            <div class="selected"><a class="mb__text" href="#">início</a>
-                <div class="bar"></div>
-            </div>
-            <div class="selectable"><a class="mb__text" href="./pages/dsn/dsn__page.html">design</a>
-                <div class="bar"></div>
-            </div>
-            <div class="selectable"><a class="mb__text" href="./pages/front/front__page.html">front-end</a>
+            <div class="selected"><a class="mb__text">início</a>
                 <div class="bar"></div>
             </div>
             <div class="selectable"><a class="mb__text" href="#">contato</a>
@@ -39,28 +33,31 @@
       </div>
     <main>
         <div id="cont">
-            <div id="dsn__cont" class="stl__cont">
-                <img class="img__home" src="./assets/microphone-pop-shield-mockup-perspective.png" alt="">
+            <div id="dsn__cont" class="home-stl__cont">
+                <img class="img__home" src="./assets/cover/capaCmkt.png" alt="">
                 <div class="mask"></div>
-                <a href="./pages/dsn/dsn__page.html" id="link__dsn" class="stl__link" onmouseover="hv()" >
-                    <h2 class="txt__h2">
+                <a href="./pages/dsn/dsn-page.html" id="link__dsn" class="index__btn global__btn" onmouseover="hv()" >
+                    <h2 class="tlt__h1">
                         design
                     </h2>
-                    <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow">
+                    <!-- <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow"> -->
                 </a>
             </div>
-            <div id="front__cont" class="stl__cont">
+            <div id="front__cont" class="home-stl__cont">
                 <img class="img__home" src="./assets/mokp.png" alt="">
                 <div class="mask"></div>
-                <a href="" id="link__front" class="stl__link">
-                    <h2 class="txt__h2">
+                <a href="./pages/front/front-page.html" id="link__front" class="index__btn global__btn">
+                    <h2 class="tlt__h1">
                         front-end
                     </h2>
-                    <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow">
+                    <!-- <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow"> -->
                 </a>
             </div>
         </div>
     </main>
+    <footer class='footer__index'>
+        <!-- <p class="txt__p">Todos os riretos reservados <br> matheusilva - 2024</p> -->
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>
