@@ -282,11 +282,12 @@ nav {
 }
 
 .cont__img {
+    display: flex;
+    align-items: center;
     height: 328px;
     width: 100%;
     position: relative;
     overflow: hidden;
-    align-content: center;
 }
 
 .img__card{
