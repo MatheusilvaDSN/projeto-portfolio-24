@@ -5,6 +5,7 @@
 
 :root {
     --text-color: white;
+    --text-color: white;
     --secund-text-color: #CDCDCD;
     --bg-color: rgb(0, 0, 0);
     --cont-color: rgba(0, 0, 0, 0.6);
@@ -542,6 +543,38 @@ gap: 16px;
     display: flex;
 }
 
+.comps__img2, .comps__img3, .comps__img4 {
+    width: 100%;
+}
+
+.cont__info__re {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.linebar {
+    position: relative;
+}
+
+.linebar::before {
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: var(--sub-cont-grey);
+    content: "";
+    top: -26px;
+    left: 50%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    gap: 12px;
+}
+
+
 footer {
     display: flex;
     margin: 0px 16px 0px 16px;
@@ -550,10 +583,9 @@ footer {
     height: 100px;
 }
 
-.footer__index {
+.font__footer {
     position: absolute;
-    z-index: 2;
-    bottom: 0;
+    bottom:0%;
 }
 
 footer::after {
@@ -563,6 +595,32 @@ footer::after {
 }
 
 /* media quety */
+
+
+@media only screen and (min-width: 427px) {
+    /* subpages */
+
+    .comps__img2 {
+         width: auto;
+    }
+}
+
+@media only screen and (min-width: 475px) {
+    /* subpages */
+
+    .comps__img3 {
+        width: auto;
+    }
+   
+}
+
+@media only screen and (min-width: 595px) {
+    /* subpages */
+   
+    .comps__img4 {
+        width: auto;
+    }
+}
 
 @media only screen and (min-width: 576px) {
     /* pages */
@@ -760,12 +818,55 @@ footer::after {
         margin: 0px 104px 0px 104px;
     }
 
+    .cont__info__re {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .cont__info__re2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+
+    .linebar::before {
+        width: 24px;
+        height: 2px;
+        top: 50%;
+        left: -26px;
+    }
+
 
     footer {
         margin: 0px 104px 0px 104px;
     }
 
  
+}
+
+@media only screen and (max-width: 940px) {
+    /* pages */
+
+    .cont__info__re {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .linebar {
+        position: relative;
+    }
+    
+    .linebar::before {
+        position: absolute;
+        width: 2px;
+        height: 24px;
+        background-color: var(--sub-cont-grey);
+        content: "";
+        top: -26px;
+        left: 50%;
+    }
 }
 
 @media only screen and (min-width: 1101px) {

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfólio, matheusilva, design, ux/ui, html, css">
+    <meta name="description" content="...">
+    <link rel="icon" href="../../assets/favicon/icon.svg">
+    <title>front-end | Portfólio</title>
+    <link rel="stylesheet" href="../../styleGlobal.css">
+</head>
+<body>
+    <header id="header__pages">
+        <nav>
+            <a id="logo" href="../../index.html"><img id="logo__img" src="../../assets/logo-24.svg" alt=""></a>
+            <div class="nav__itens">
+                <div class="btn__menu" onclick="clickMenu()">
+                    <img id="btn__humb" src="../../assets/menu.svg" alt="">
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <div id="menu__mb">
+        <div id="lista__mb">
+            <div class="selectable"><a class="mb__text" href="../../index.html">início</a>
+                <div class="bar"></div>
+            </div>
+            <div class="selectable"><a class="mb__text" href="../dsn/dsn-page.html">design</a>
+                <div class="bar"></div>
+            </div>
+            <div class="selected"><a class="mb__text">front-end</a>
+                <div class="bar"></div>
+            </div>
+            <div class="selectable"><a class="mb__text" href="#">contato</a>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="bg__md"></div>
+      </div>
+    <main class="mainPages">
+        <div class="cont__list">
+            <a href="./sub-front/fort-page.html" class="card">
+                <div class="cont__img">
+                    <img class="img__card" src="../../assets/cover/capaFort.png" alt="">
+                    <div class="mask"></div>
+                </div>
+                <div class="info">
+                    <div class="txt">
+                        <h2 class="tlt__h2">Fortnite <br> estudo de caso</h2>
+                        <h3 class="txt__h3">front-end/ui 2023/24</h3>
+                    </div>
+                    <!-- <img src="../../assets/arrow_outward.svg" alt="" class="icon__arrow"> -->
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="font__footer">
+        <!-- <p class="txt__p">Todos os riretos reservados <br> matheusilva - 2024</p> -->
+    </footer>
+    <script src="../pages.js"></script>
+</body>
+</html>
