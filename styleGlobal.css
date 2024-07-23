@@ -85,6 +85,7 @@ body {
     text-decoration: none;
     padding: 4px 0px 4px 8px;
     border: solid 2px white;
+    border-radius: 12px;
     transition: var(--transition);
 }
 
@@ -199,11 +200,10 @@ nav {
 }
 
 #coverMain {
-    margin-top: 98px;
-    display: block;
-    height: auto;
-    text-decoration: none;
     position: relative;
+    border-radius: 20px;
+    margin: 98px 16px 0px 16px;
+    overflow: hidden;
 }
 
 #mainIdenx {
@@ -235,14 +235,18 @@ nav {
 
 #dsn__cont {
     grid-area: dsn;
+    margin: 16px 16px 0px 16px;
+    border-radius: 20px;
 }
 
 #front__cont {
     grid-area: front;
+    margin: 0px 16px 16px 16px;
+    border-radius: 20px;
 }
 
 .home-stl__cont {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     position: relative;
@@ -289,6 +293,7 @@ nav {
     width: 100%;
     position: relative;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .img__card{
@@ -315,6 +320,7 @@ nav {
     bottom: 0px;
     padding-bottom: 16px;
     transition: var(--transition);
+    border-radius: 20px;
 }
 
 .txt {
@@ -329,7 +335,6 @@ nav {
 .icon__arrow {
     height: 40px;
     width: 40px;
-    padding-top: 8px;
 }
 
 .card:active .img__card {
@@ -371,7 +376,7 @@ nav {
 }
 
 .cover__txt {
-    height: 366px;
+    height: 400px;
 }
 
 .cover__img {
@@ -404,7 +409,8 @@ nav {
 #content {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    margin-top: -24px;
+    gap: 24px;
 }
 
 .h2Tlt {
@@ -422,6 +428,7 @@ nav {
     margin: 0px 16px 0px 16px;
     padding: 16px 16px 16px 16px;
     gap: 24px;
+    border-radius: 20px;
 }
 
 
@@ -519,6 +526,7 @@ gap: 16px;
     display: flex;
     flex-direction: column;
     border: solid 2px var(--sub-cont-grey);
+    border-radius: 12px;
 }
 
 .sub__cont__tlt {
@@ -724,15 +732,19 @@ footer::after {
         width: 140%;
     }
     
-
+    .home-stl__cont {
+        width: 100%;
+    }
 
     #dsn__cont {
         grid-area: dsn;
+        margin: 16px 0px 16px 16px;
         transition: var(--transition);
     }
     
     #front__cont {
         grid-area: front;
+        margin: 16px 16px 16px 0px;
         transition: var(--transition);
     }
 
