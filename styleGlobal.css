@@ -113,6 +113,10 @@ header {
     z-index: 2;
 }
 
+.gg {
+    position: relative;
+}
+
 #header__pages {
     background-color: var(--bg-color);
 }
@@ -227,15 +231,20 @@ nav {
     height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    /* grid-template-rows: 50% 50%; */
     grid-template-areas: 
+    "gg"
     "dsn"
     "front";
 }
 
+.gg {
+    grid-area: gg;
+}
+
 #dsn__cont {
     grid-area: dsn;
-    margin: 16px 16px 0px 16px;
+    margin: 0px 16px 0px 16px;
     border-radius: 20px;
 }
 
@@ -721,6 +730,10 @@ footer::after {
     }
 
     /* index */
+
+    .gg {
+        position: fixed;
+    }
 
     #cont {
         height: 100vh;
