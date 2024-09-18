@@ -1,73 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Portfólio, matheusilva, design, ux/ui, html, css">
     <meta name="description" content="...">
-    <link rel="icon" href="./assets/favicon/icon.svg">
+    <link rel="icon" href="./assets/favicon/favicon_logo.svg">
+    <link rel="stylesheet" href="./globalStyle.css">
     <title>Portfólio | Matheus Silva</title>
-    <link rel="stylesheet" href="./styleGlobal.css">
 </head>
 <body>
-    <!-- <header>
-        <nav id="#indexNav ">
-            <a id="logo__index" href="../../index.html"><img id="logo__img" src="../../assets/logo-24.svg" alt=""></a>
-            <div class="nav__itens">
-                <button class="btn__menu" onclick="clickMenu()">
-                    <img id="btn__humb" src="../../assets/menu.svg" alt="">
-                  </button>
+    <header class="head">
+        <nav class="navbar">
+            <img class="logo" src="./assets/favicon/favicon_logo.svg" alt="" srcset="">
+            <div class="menu__desk">
+                <a href="#dsn" class="menu__txt">
+                    <h3 class="font-S"> <b>design</b></h3>
+                </a>
+                <a href="#front" class="menu__txt">
+                    <h3 class="font-S"><b>front-end</b></h3>
+                </a>
+            </div>
+            <div class="btn__menu" onclick="clickMenu()">
+                <img class="menu__icon" src="./assets/icons/Icones_mais-24.svg" alt="" srcset="">
             </div>
         </nav>
-    </header> -->
-    <div id="menu__mb" class="index__mb">
-        <div id="lista__mb">
-            <div class="selected"><a class="mb__text">início</a>
-                <div class="bar"></div>
-            </div>
-            <div class="selectable"><a class="mb__text" href="#">contato</a>
-                <div class="bar"></div>
-            </div>
-        </div>
-        <div class="bg__md"></div>
-      </div>
+    </header>
+
     <main>
-        <div id="cont">
-            <header class="gg">
-                <nav id="#indexNav ">
-                    <a id="logo__index" href="./index.html"><img id="logo__img" src="./assets/logo-24.svg" alt=""></a>
-                    <div class="nav__itens">
-                        <button class="btn__menu" onclick="clickMenu()">
-                            <img id="btn__humb" src="./assets/menu.svg" alt="">
-                          </button>
+        <div class="bio">
+            <div class="cont__bio">
+                <div class="txt__bio">
+                    <div class="tlt__bio">
+                        <h1 class="font-XL">olá</h1>                            
+                        <h2 class="font-L">eu sou <b>Matheus Silva</b></h2>
                     </div>
-                </nav>
-            </header>
-            <div id="dsn__cont" class="home-stl__cont">
-                <img class="img__home" src="./assets/cover/capaCmkt.png" alt="">
-                <div class="mask"></div>
-                <a href="./pages/dsn/dsn-page.html" id="link__dsn" class="index__btn global__btn" onmouseover="hv()" >
-                    <h2 class="tlt__h1">
-                        design
-                    </h2>
-                    <!-- <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow"> -->
+                    <div class="p__bio">
+                        <p class="font-S">Um designer gráfico que, ama formas geométricas e que busca sempre aprender coisas novas, sempre experimentando e mudando. <br><br>
+                            Hoje, estou gostando de brincar com frontend e UI design, mas nunca vou parar de explorar as minhas outras habilidades.</p>
+                    </div>
+                </div>
+                <div class="img__bio">
+                    <img class="foto__eu" src="./assets/bio/img-bio.png" alt="">
+                </div>
+                <a href="#dsn" class="btn__arrow">
+                    <img class="arrow__icon" src="./assets/icons/Icones_bot-42.svg" alt="" srcset="">
                 </a>
             </div>
-            <div id="front__cont" class="home-stl__cont">
-                <img class="img__home" src="./assets/cover/capaFort.png" alt="">
-                <div class="mask"></div>
-                <a href="./pages/front/front-page.html" id="link__front" class="index__btn global__btn">
-                    <h2 class="tlt__h1">
-                        front-end
-                    </h2>
-                    <!-- <img src="./assets/arrow_outward.svg" alt="" class="icon__arrow"> -->
-                </a>
-            </div>
+            <div class="deco"></div>
         </div>
     </main>
-    <script src="./main.js"></script>
+    <article>
+        <div id="trampos">
+            <div class="categ">
+                <h2 class="font-L">meus trampos de <b>design</b></h2> 
+                <div id="dsn" class="cont__trampos">
+                    <a class="card" href="https://fastdeath.github.io/projeto-final-grupo-2/" target="_blank">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaFort.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Fortnite <br> estudo de caso</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">ui design</h4>
+                                <h4 class="font-s tag">2023/24</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="https://www.figma.com/proto/wKH8nDRKwUCbVvw1hQd8JD/Grupo-6-%7C-Tema-4---Apresentação---Mobile?page-id=0%3A1&node-id=2-3&viewport=226%2C-6525%2C0.49&t=vKhhhOQ1Py5shnYe-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2%3A3" target="_blank">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaRe.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Re-Social <br> estudo de caso</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">ui/ux design</h4>
+                                <h4 class="font-s tag">2023</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaSimul.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Simul <br> estudo de caso</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">ui design</h4>
+                                <h4 class="font-s tag">2022/23</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaNc.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Nosso Card</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2023</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaTh.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">THSTORE</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2022</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaMs.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">MSALES</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2022</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaCmkt.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">connect marketing</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2021</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaCafe.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">cafeemsuacasa</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2021</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaLf.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Leonardo Fernandes</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2021</h4>
+                            </div>
+                        </div>
+                    </a>  
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaTc.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Transformação Coletiva</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2020</h4>
+                            </div>
+                        </div>
+                    </a>  
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaBpod.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Bahiapod</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">branding</h4>
+                                <h4 class="font-s tag">2019</h4>
+                            </div>
+                        </div>
+                    </a>        
+                </div>
+            </div>
+            <div class="categ">
+                <h2 class="font-L">meus trampos de <b>front-end</b></h2> 
+                <div id="front" class="cont__trampos">
+                    <a class="card" href="">
+                        <div class="cont__img">
+                            <img class="img__card" src="./assets/cover/capaFort.png" alt="">
+                        </div>
+                        <div class="cont__info">
+                            <h3 class="font-M">Fortnite <br> estudo de caso</h3>
+                            <div class="sub__info">
+                                <h4 class="font-s tag">front-end</h4>
+                                <h4 class="font-s tag">2023/24</h4>
+                            </div>
+                        </div>
+                    </a>      
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="bot"></div>
+    </footer>
 </body>
 </html>

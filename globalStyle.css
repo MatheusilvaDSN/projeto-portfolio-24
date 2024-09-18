@@ -1,0 +1,533 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    scroll-margin-top: 200px;
+}
+
+:root {
+    --primary-color: #FFF7EB;
+    --secundary-color: #1E1E1E;
+    --suport-color: #ECDFCA;
+    --gradiente-topo: linear-gradient(180deg, #FFF7EB 20%, rgba(255, 247, 235, 0) 50.5%);
+    --css-color: rgba(1, 112, 186, 1);
+    --html-color: rgba(228, 77, 38, 1);
+    --js-color: rgba(247, 223, 30, 1);
+}
+
+@font-face {
+    font-family: 'FivoSansModern';
+    src: url(./font/FivoSansModern-Regular.otf) format('opentype');
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'FivoSansModern', Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ------------------ fonts-mb ------------------ */
+
+.font-XL{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80%;
+}
+
+.font-L{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 29px;
+}
+
+.font-L-bold{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+}
+
+.font-M{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.font-S{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+/* ------------------ header-mb ------------------ */
+
+.head {
+    display: flex;
+    position: absolute;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    z-index: 1;
+    background: var(--gradiente-topo);
+    padding-top: 16px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secundary-color);
+    border-radius: 16px;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    height: 105px;
+    width: 100%;
+    margin: 0px 16px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.btn__menu {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secundary-color);
+    border-radius: 99px;    
+}
+
+.menu__desk{
+    display: none;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.menu__txt{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    height: 42px;
+    border: 1px solid var(--primary-color);
+    border-radius: 99px;
+    text-decoration: none;
+    color: var(--secundary-color);
+    transition: all 0.5s;
+}
+
+.menu__txt:hover{
+    border: 1px solid var(--secundary-color);
+}
+
+.menu__icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* ------------------ index-mb ------------------ */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.cont__bio{
+    position: relative;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secundary-color);
+    border-radius: 16px;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px;
+    height: 515px;
+    margin: 136px 16px 0px;
+}
+
+.txt__bio{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.tlt__bio {
+    display: flex;
+    flex-direction: column;
+    width: 119px;
+    gap: 12px;
+}
+
+.tlt__bio-2 {
+    display: flex;
+    flex-direction: column;
+    width: 119px;
+}
+
+.img__bio{
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    right: 0px;
+}
+
+.foto__eu{
+    width: 300px;
+    height: 300px;
+    margin: 0px 0px 80px 50px;
+}
+
+.btn__arrow {
+    position: absolute;
+    bottom: -37px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secundary-color);
+    border-radius: 99px;
+    width: 74px;
+    height: 74px;
+    padding: 16px;
+}
+
+.arrow__icon{
+    height: 42px;
+    width: 42px;
+}
+
+/* ---------- */
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+#trampos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 136px 16px 0px;
+    width: 100vw;
+    gap: 64px;
+}
+
+.categ{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cont__trampos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.cont__img{
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secundary-color);
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 184px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.img__card{
+    width: 100%;
+    transition: all 0.8s;
+}
+
+.cont__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    background: var(--suport-color);
+    border: 1px solid var(--secundary-color);
+    box-sizing: border-box;
+    border-radius: 16px;
+    color: var(--secundary-color);
+    transition: all 0.6s;
+}
+
+.sub__info{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.tag{
+    color: var(--primary-color);
+    padding: 8px 12px;
+    background-color: var(--secundary-color);
+    border-radius: 99px;
+    align-self: center;
+    transition: all 0.6s;
+}
+
+.card:hover{
+    .img__card{
+        width: 110%;
+    }
+
+    .cont__info{
+        background: var(--secundary-color);
+        color: var(--primary-color);
+    }
+
+    .tag{
+        color: var(--secundary-color);
+        background-color: var(--primary-color);
+    }
+}
+
+/* --------------footer----------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.bot{
+    background-color: var(--primary-color);
+    border: 1px solid var(--secundary-color);
+    border-radius: 16px;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    height: 105px;
+    width: 100%;
+    margin: 0px 16px;
+}
+
+.bot::after {
+    content: "Todos os diretos reservados | matheusilva - 2024";
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+/* ------------------ media quety ------------------ */
+
+@media only screen and (min-width: 550px) {
+    .cont__trampos{
+        grid-template-columns:  2fr 2fr;
+    }
+}
+
+@media only screen and (min-width: 877px) {
+    .cont__trampos{
+        grid-template-columns:  3fr 3fr 3fr;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+
+    /* ------------------ fonts-desk ------------------ */
+
+.font-XL{
+    font-size: 120px;
+    line-height: 90%;
+}
+
+.font-L{
+    font-size: 48px;
+    line-height: 50px;
+}
+
+
+.font-M{
+    font-size: 28px;
+    line-height: 29px;
+}
+
+.font-S{
+    font-size: 24px;
+    line-height: 25px;
+}
+
+
+    /* ------------------ header-mb ------------------ */
+
+    .navbar {
+        padding: 20px 32px;
+        width: 1232px;
+        margin: 0px;
+    }
+
+    .menu__desk{
+        display: flex;
+    }
+
+    /* ------------------ index-desk ------------------ */
+
+    main{
+        width: 100vw;
+    }
+
+    .bio {
+        width: 1232px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .cont__bio{
+        position: relative;
+        background-color: var(--primary-color);
+        border: 1px solid var(--secundary-color);
+        border-radius: 16px;    
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 32px 32px;
+        height: 515px;
+        width: 755px;
+        margin: 136px 0px 0px;
+    }
+
+    .txt__bio{
+        gap: 12px;
+        width: 584px;
+    }
+
+    .tlt__bio {
+        display: flex;
+        flex-direction: row;
+        width: 530px;
+    }
+
+    .img__bio{
+        display: flex;
+        align-items: center;
+        overflow: visible;
+        position: absolute;
+        width: 490px;
+        height: 490px;
+        top: 0px;
+        right: 0px;
+    }
+    
+    .foto__eu{
+        width: 490px;
+        height: 490px;
+        margin: 0px 0px 56px 342px;
+    }
+
+    .arrow__icon{
+        height: 42px;
+        width: 42px;
+    }
+
+    .deco {
+        box-sizing: border-box;
+        width: 208px;
+        height: 288px;
+        background-color: var(--primary-color);
+        border: 1px solid var(--secundary-color);
+        border-radius: 16px;
+        margin-top: 69px;
+    }
+
+    /* ---------- */
+
+    article{
+        width: 100vw;
+    }
+
+    #trampos {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 136px 0px 0px;
+        width: 1232px;
+    }
+
+    .cont__trampos{
+        grid-template-columns:  3fr 3fr 3fr;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 400px;
+    }
+    
+    .cont__img{
+        box-sizing: border-box;
+        background-color: var(--primary-color);
+        border: 1px solid var(--secundary-color);
+        border-radius: 99px;
+        display: flex;
+        align-items: center;
+        height: 184px;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+    
+    .img__card{
+        width: 100%;
+    }
+    
+    .cont__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+    }
+
+    /* --------------footer----------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 64px;
+}
+
+.bot{
+    padding: 20px 32px;
+    width: 1232px;
+    margin: 0px;
+}
+
+.bot::after {
+    content: "Todos os diretos reservados | matheusilva - 2024";
+    color: var(--text-color);
+    font-size: 24px;
+}
+}
