@@ -141,6 +141,8 @@ body {
 main {
     display: flex;
     justify-content: center;
+    overflow-x: clip;
+    height: 100%;
 }
 
 .cont__bio{
@@ -223,7 +225,7 @@ article {
 #trampos {
     display: flex;
     flex-wrap: wrap;
-    margin: 136px 16px 0px;
+    margin: 100px 16px 0px;
     width: 100vw;
     gap: 64px;
 }
@@ -396,6 +398,7 @@ footer{
 
     main{
         width: 100vw;
+        height: auto;
     }
 
     .bio {
@@ -471,7 +474,7 @@ footer{
     #trampos {
         display: flex;
         flex-wrap: wrap;
-        margin: 136px 0px 0px;
+        margin: 124px 0px 0px;
         width: 1232px;
     }
 
