@@ -6,211 +6,302 @@
     <meta name="keywords" content="Portfólio, matheusilva, design, ux/ui, html, css">
     <meta name="description" content="...">
     <link rel="icon" href="./assets/favicon/favicon_logo.svg">
-    <link rel="stylesheet" href="./globalStyle.css">
+    <link rel="stylesheet" href="./output.css">
     <title>Portfólio | Matheus Silva</title>
 </head>
-<body>
-    <header class="head">
-        <nav class="navbar">
-            <img class="logo" src="./assets/favicon/favicon_logo.svg" alt="" srcset="">
-            <!-- <div class="menu__desk">
-                <a href="#dsn" class="menu__txt">
-                    <h3 class="font-S"> <b>design</b></h3>
+<body class="relative">
+
+<!-- HEADER--------------------------------------------------------------------------------------------------- -->
+    <header class="flex fixed z-10 w-full h-[104px] bg-(--suport-color) justify-center border-b-1 border-solid border-(--primary-color)">
+        <div class="flex w-[1232px] justify-between items-center mq-w-100 px-[24px]">
+            <a href="./index.html">
+                <img src="./assets/favicon/favicon_logo.svg" alt="">
+            </a>
+            <div class="flex w-auto gap-[8px]">
+                <a href="#" class="selected flex w-[100px] relative justify-center items-center">
+                    <h3 class="font-bold text-[24px] text-(--primary-color)">início</h3>
+                    <div class="flex line-menu absolute bottom-[-2px] margin"></div>
                 </a>
-                <a href="#front" class="menu__txt">
-                    <h3 class="font-S"><b>front-end</b></h3>
+                <a href="#" class="selectable flex w-[100px] relative justify-center items-center">
+                    <h3 class="font-regular text-[24px] text-(--primary-color) txt-menu">sobre</h3>
+                    <div class="flex line-menu absolute bottom-[-2px]"></div>
                 </a>
-            </div> -->
-            <div class="btn__menu" onclick="clickMenu()">
-                <img class="menu__icon" src="./assets/icons/Icones_mais-24.svg" alt="" srcset="">
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="bio">
-            <div class="cont__bio">
-                <div class="txt__bio">
-                    <div class="tlt__bio">
-                        <h1 class="font-XL">olá</h1>                            
-                        <h2 class="font-L">eu sou <b>Matheus Silva</b></h2>
-                    </div>
-                    <div class="p__bio">
-                        <p class="font-S">Um designer gráfico que, ama formas geométricas e que busca sempre aprender coisas novas, sempre experimentando e mudando. <br><br>
-                            Hoje, estou gostando de brincar com frontend e UI design, mas nunca vou parar de explorar as minhas outras habilidades.</p>
-                    </div>
+<!-- COVER ----------------------------------------------------------------------------------------------------- -->
+    <div class="flex w-full h-[704px] bg-(--primary-color) justify-center">
+        <div class="flex flex-col relative w-[1232px] h-auto justify-center gap-[48px] mq-w-100 px-[24px]">
+            <div class="flex items-center gap-[32px] w-fit df-672px">
+                <h1 class="font-bold text-[110px] text-(--suport-color)">olá</h1>
+                <div class="flex flex-col">
+                    <h2 class="font-regular text-[40px] text-(--suport-color)">eu sou</h2>
+                    <h2 class="font-bold text-[40px] text-(--suport-color)">Matheus Silva</h2>
                 </div>
-                <div class="img__bio">
-                    <img class="foto__eu" src="./assets/bio/img-bio.png" alt="">
+                <div class="flex justify-center items-center absolute bottom-[-67px] size-[140px] bg-(--suport-color) border-1 border-solid border-(--primary-color) rounded-full">
+                    <img class="size-[100px]" src="./assets/icons/Icones_bot-2-42.svg" alt="" srcset="">
                 </div>
-                <a href="#dsn" class="btn__arrow">
-                    <img class="arrow__icon" src="./assets/icons/Icones_bot-42.svg" alt="" srcset="">
+            </div>
+            <p class="font-light text-[24px] w-[1063px] text-(--suport-color) mq-w-100 txt-16px">Um designer gráfico que, ama formas geométricas e que busca sempre aprender coisas novas, sempre experimentando e mudando.
+                <br><br>
+                Hoje, estou gostando de brincar com frontend e UI design, mas nunca vou parar de explorar as minhas outras habilidades.
+            </p>
+        </div>
+    </div>
+
+<!-- CONTEUDO--------------------------------------------------------------------------------------------------- -->
+    <div class="flex w-full justify-center mt-[176px]">
+        <div class="grid grid-cols-3 w-[1232px] h-auto mq-w-100 px-[24px] d-grid">
+
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px] rounded-[48px]" href="#">
+                <img class="w-full" src="./assets/cover/capaFort.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px txt-24px text-(--suport-color)">M.A.E. Maria Rosa</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">ui design</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2025</h3>
+                            </div>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="deco"></div>
-        </div>
-    </main>
-    <section>
-        <div id="trampos">
-            <div class="categ">
-                <h2 class="font-L">meus projetos</h2> 
-                <div id="dsn" class="cont__trampos">
-                    <a class="card" href="./pages/estudo-fortnite.html">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaFort.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Fortnite <br> estudo de caso</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">web design</h4>
-                                <h4 class="font-s tag">2023/24</h4>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px]" href="#">
+                <img class="w-full" src="./assets/cover/capaFort.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Gustavo Quezada</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">ui design</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2025</h3>
                             </div>
                         </div>
-                    </a>
-                    <a class="card" href="./pages/estudo-resocial.html">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaRe.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Re-Social <br> estudo de caso</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">ui/ux design</h4>
-                                <h4 class="font-s tag">2023</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaSimul.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Simul <br> estudo de caso</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">ui design</h4>
-                                <h4 class="font-s tag">2022/23</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaNc.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Nosso Card</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2023</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaTh.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">THSTORE</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2022</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaMs.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">MSALES</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2022</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaCmkt.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">connect marketing</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2021</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaCafe.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">cafeemsuacasa</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2021</h4>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaLf.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Leonardo Fernandes</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2021</h4>
-                            </div>
-                        </div>
-                    </a>  
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaTc.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Transformação Coletiva</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2020</h4>
-                            </div>
-                        </div>
-                    </a>  
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaBpod.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Bahiapod</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">branding</h4>
-                                <h4 class="font-s tag">2019</h4>
-                            </div>
-                        </div>
-                    </a>        
-                </div>
+                    </div>
+                </a>
             </div>
-            <!-- <div class="categ">
-                <h2 class="font-L">meus trampos de <b>front-end</b></h2> 
-                <div id="front" class="cont__trampos">
-                    <a class="card" href="">
-                        <div class="cont__img">
-                            <img class="img__card" src="./assets/cover/capaFort.png" alt="">
-                        </div>
-                        <div class="cont__info">
-                            <h3 class="font-M">Fortnite <br> estudo de caso</h3>
-                            <div class="sub__info">
-                                <h4 class="font-s tag">front-end</h4>
-                                <h4 class="font-s tag">2023/24</h4>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px] rounded-[48px]" href="#">
+                <img class="w-full" src="./assets/cover/capaFort.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Fortnite</h2>
+                                <h2 class="font-regular text-[24px] txt-24px text-(--suport-color)">Estudo de caso</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">webdesign</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2024</h3>
                             </div>
                         </div>
-                    </a>      
-                </div>
-            </div> -->
-        </div>
-    </section>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px]" href="#">
+                <img class="w-full" src="./assets/cover/capaRe.png" alt="">
+                <a href="./pages/re-social.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Re-Social</h2>
+                                <h2 class="font-regular text-[24px] txt-24px text-(--suport-color)">Estudo de caso</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">ui/ux design</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2023</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px] rounded-[48px]" href="#">
+                <img class="w-full" src="./assets/cover/capaSimul.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Simul</h2>
+                                <h2 class="font-regular text-[24px] txt-24px text-(--suport-color)">Estudo de caso</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) ">ui/ux design</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2023</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px]" href="#">
+                <img class="w-full" src="./assets/cover/capaNc.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Nosso Card</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2023</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+             
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px] rounded-[48px]" href="#">
+                <img class="w-full" src="./assets/cover/capaTh.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">THSTORE</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2022</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px]" href="#">
+                <img class="w-full" src="./assets/cover/capaMs.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">MSALES</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2022</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px] rounded-[48px]" href="#">
+                <img class="w-full" src="./assets/cover/capaCmkt.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">connect marketing</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2021</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px]" href="#">
+                <img class="w-full" src="./assets/cover/capaCafe.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">cafeemsuacasa</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2021</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px] rounded-[48px]" href="#">
+                <img class="w-full" src="./assets/cover/capaLf.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Leonardo Fernandes</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2021</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px]" href="#">
+                <img class="w-full" src="./assets/cover/capaTc.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Transformação Coletiva</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2020</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card flex relative overflow-hidden justify-center items-center w-full h-[400px] rounded-[48px]" href="#">
+                <img class="w-full" src="./assets/cover/capaBpod.png" alt="">
+                <a href="./pages/fortnite.html"class="card-info flex flex-col w-full h-[400px] absolute justify-center items-center gap-[24px]">
+                    <div class="w-full h-full absolute bg-(--primary-color) opacity-75"></div>
+                    <div class="flex w-full h-[400px] absolute justify-center items-center">
+                        <div class="flex flex-col justify-center gap-[24px] px-[24px]">
+                            <div class="flex flex-col justify-center">
+                                <h2 class="font-bold text-[24px] txt-24px text-(--suport-color)">Bahiapod</h2>
+                            </div>
+                            <div class="flex">
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">branding</h3>
+                                <h3 class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">2019</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-    <footer>
-        <div class="bot"></div>
+
+        </div>
+    </div>
+
+<!-- footer ----------------------------------------------------------------------------------------------------- -->
+    <footer class="flex w-full h-[104px] bg-(--suport-color) justify-center mt-[176px] border-t-1 border-solid border-(--primary-color)">
+        <div class="flex w-[1232px] mq-w-100vw px-[24px] justify-between items-center">
+            <div class="flex w-auto gap-[8px]">
+                <h3 class="font-light text-[16px] text-(--primary-color)">Todos os direitos reservados | Matheus Silva 2025</h3>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

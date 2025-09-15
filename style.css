@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=font:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    /* margin: 0px;
+    padding: 0px; */
+    scroll-behavior: smooth;
+    scroll-margin-top: 200px;
+     line-height: 1.2;
+}
+
+:root {
+    --primary-color: #1B1464;
+    --secundary-color: #1E1E1E;
+    --suport-color: #ffffff;
+    --bg-color: #F6F6F6;
+    --gradiente-topo: linear-gradient(180deg, #FFF7EB 20%, rgba(255, 247, 235, 0) 50.5%);
+    --css-color: rgba(1, 112, 186, 1);
+    --html-color: rgba(228, 77, 38, 1);
+    --js-color: rgba(247, 223, 30, 1);
+}
+
+.font-extralight {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.font-light {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-regular {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-medium {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-semibold {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-bold {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-black {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-extralight-italic {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.font-light-italic {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.font-regular-italic {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-semibold-italic {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.font-bold-italic {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.line-menu{
+  width: 109px;
+  height: 1px;
+  background-color: var(--primary-color);
+  transform:   scaleX(0);
+  transition: 300ms;
+}
+
+.selected > .line-menu{
+  transform: scaleX(1); 
+}
+
+.selectable:hover .line-menu{
+  transform: scaleX(1);  
+}
+
+.txt-menu{
+  transition: 300ms; 
+}
+
+.selectable:hover .txt-menu{
+  color: var(--primary-color);  
+  font-weight: 700;
+}
+
+
+.card-info{
+  /* display: none; */
+  /* transform: translateY(-400px); */
+  opacity: 0;
+  transition: 500ms;
+}
+
+.card:hover .card-info{
+  /* display: flex; */
+  /* transform: translate(0px); */
+  opacity: 1;
+}
+
+/* .d-grid{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+} */
+.img-hover{
+    filter: invert(100%);
+  }
+
+.btn-hover:hover{
+  background-color: var(--secundary-color);
+  
+  /* .font-hover{
+    color: var(--secundary-color);
+  }
+  .img-hover{
+    filter: invert(0%);
+  } */
+}
+
+.i-color{
+  filter: invert(14%) sepia(65%) saturate(2252%) hue-rotate(232deg) brightness(82%) contrast(113%);
+}
+
+@media only screen and (max-width: 1280px){
+  .mq-w-100{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  .flex-mq{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-r-mq{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .cover-mq{
+    height: 400px;
+  }
+
+  .reverse{
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 672px){
+  .df-672px{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: start;
+  }
+
+  .txt-16px{
+    font-size: 16px;
+  }
+
+  .txt-32px{
+    font-size: 32px;
+  }
+
+  .txt-24px{
+    font-size: 24px;
+  }
+
+  /* .card-info{
+  opacity: 100%;
+  } */
+
+  .i-mq-24{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 784px){
+  .d-grid{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1104px){
+  .d-grid{
+    grid-template-columns: 2fr 2fr;
+  }
+}
