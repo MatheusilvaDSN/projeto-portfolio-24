@@ -183,9 +183,6 @@
 
     @media (max-width: 1048px) {
 
-        .card{
-        height: 324px;
-        }
 
         .w-doc, .w-img-cont, .w-img-cont-2{
             width: 100%;
@@ -280,9 +277,13 @@
     }
 
     @media (max-width: 544px) {
-        /* .visual > .h-img-card{
+        .visual > .h-img-card{
             height: 362px;
-        } */
+        }
+
+        .card{
+        height: 324px;
+        }
 
         .logo-size{
             width: 240px;
