@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfólio, matheusilva, design, ux/ui, html, css">
+    <meta name="description" content="...">
+    <link rel="icon" href="../assets/logo/favicon_logo.svg">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/type.css">
+    <link rel="stylesheet" href="../style/pages.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+    </style>
+    <title>Portfólio | Re-Social</title>
+</head>
+
+<body class="flex column relative">
+    <header class="flex w-full fixed color-2 justify-center align-center index-10 px-24 top-0">
+        <nav class="header flex row w-cont justify-between align-center">
+            <a href="../index.html">
+                <img class="logo-size" src="../assets/logo/logo.svg" alt="">
+            </a>
+            <div class="flex row gap-16 menu">
+                <a class="select flex decoration-none" href="../index.html">
+                    <h3 class="txt-menu font-regular font-s txt-color-1">inicio</h3>
+                </a>
+                <a class="selected flex decoration-none" href="./sobre.html">
+                    <h3 class="txt-menu font-regular font-s txt-color-1">sobre</h3>
+                </a>
+            </div>
+
+            <div class="btn__menu flex menu-mais border b-1 pt-8 pl-8 pb-8 pr-8 decoration-none" onclick="clickMenu()">
+                <img id="icon__js" class="icon-size-24" src="../assets/icons/Icones_mais-24.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <div id="menu__js" class="none column color-2 fixed vh-100 vw-100 index-5">
+        <div class="flex column justify-center align-center gap-24 vh-100">
+            <a class="select flex decoration-none" href="../index.html">
+                <h3 class="txt-menu font-regular font-menu txt-color-1">inicio</h3>
+            </a>
+            <a class="selected flex decoration-none" href="./sobre.html">
+                <h3 class="txt-menu font-regular font-menu txt-color-1">sobre</h3>
+            </a>
+        </div>
+    </div>
+    <!-- conteudo -->
+    <section class="flex column w-full justify-center align-center mt-98 px-24">
+
+        <div class="flex relative justify-center w-cont cont-tlt HD">
+            <div class="flex justify-center align-center over-hidden cover-sobre">
+                <img class="w-full" src="../assets/cover/img-eu.webp" alt="">
+            </div>
+            <div class="flex absolute w-full tlt-sobre">
+                <div class="flex column gap-4 color-2">
+                    <h1 class="font-semibold font-xl txt-color-1 txt-hover">olá,</h1>
+                    <div class="flex column">
+                        <h1 class="font-regular font-l txt-color-1 txt-hover">eu sou</h1>
+                        <h1 class="font-semibold font-l txt-color-1 txt-hover">Matheus Silva!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex absolute w-full bot-0 align-end justify-end">
+                <div class="flex column gap-4 color-2 txt-sobre h-min">
+                    <h1 class="font-regular font-m txt-color-1 txt-hover">Um designer gráfico que, ama formas
+                        geométricas e que busca sempre aprender coisas novas, sempre experimentando e mudando. <br><br>
+                        Hoje, estou estou me aventurando no mundo UI design, mas nunca vou parar de explorar as minhas
+                        outras habilidades.</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-16 wrap justify-start w-cont cont-tlt pt-16 border b-t mt-32">
+            <a class="flex py-8 pr-16 pl-8 decoration-none align-center justify-center gap-8 btn-hover-2 border-4 b-1"
+                href="" target="_blank">
+                <img class="icon-size-24" src="../assets/icons/icon-link.svg" alt="">
+                <h3 class="font-regular font-s txt-color-1 txt-hover">linkedIn</h3>
+            </a>
+            <a class="flex py-8 pr-16 pl-8 decoration-none align-center justify-center gap-8 btn-hover-2 border-4 b-1"
+                href="" target="_blank">
+                <img class="icon-size-24" src="../assets/icons/icon-be.svg" alt="">
+                <h3 class="font-regular font-s txt-color-1 txt-hover">behance</h3>
+            </a>
+            <a class="flex py-8 pr-16 pl-8 decoration-none align-center justify-center gap-8 btn-hover-2 border-4 b-1"
+                href="" target="_blank">
+                <img class="icon-size-24" src="../assets/icons/icon-dribbb.svg" alt="">
+                <h3 class="font-regular font-s txt-color-1 txt-hover">dribbble</h3>
+            </a>
+            <a class="flex py-8 pr-16 pl-8 decoration-none align-center justify-center gap-8 btn-hover-2 border-4 b-1"
+                href="" target="_blank">
+                <img class="icon-size-24" src="../assets/icons/icon-git.svg" alt="">
+                <h3 class="font-regular font-s txt-color-1 txt-hover">github</h3>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="flex pt-64 justify-center align-center over-hidden">
+        <div class="flex gap-8 slide">
+            <div class="flex gap-8">
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaCmkt.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaIAA.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaSimul.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaIVC.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaLf.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaREC.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaGust.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaPSP.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaTc.png" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex gap-8">
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaCmkt.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaIAA.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaSimul.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaIVC.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaLf.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaREC.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaGust.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaPSP.png" alt="">
+                    </div>
+                </a>
+                <a class="card-sobre flex img-carr decoration-none" href="">
+                    <div class="flex justify-center align-center over-hidden">
+                        <img class="f-pb img-size" src="../assets/cover/capaTc.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex column w-full justify-center align-center gap-98 px-24 py-64">
+        <div class="flex column w-cont cont-tlt gap-64">
+            <div class="flex column gap-24">
+                <h1 class="font-semibold font-l txt-color-1">formação</h1>
+                <div class="flex column gap-16">
+                    <div class="flex">
+                        <div class="flex column gap-8 pb-16 border-5 b-b">
+                            <h3 class="font-semibold font-m txt-color-1">Curso Superior de Tecnologia Design Gráfico
+                            </h3>
+                            <div class="flex wrap gap-24">
+                                <h3 class="font-regular font-s txt-color-1">UniRuy Wyden</h3>
+                                <h3 class="font-regular font-s txt-color-1">2017 - 2019</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex column gap-8 pb-16 border-5 b-b">
+                            <h3 class="font-semibold font-m txt-color-1">Design UX/UI</h3>
+                            <div class="flex wrap gap-24">
+                                <h3 class="font-regular font-s txt-color-1">Coderhouse</h3>
+                                <h3 class="font-regular font-s txt-color-1">5/2023 – 8/2023</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex column gap-8 pb-16 border-5 b-b">
+                            <h3 class="font-semibold font-m txt-color-1">HTML e CSS</h3>
+                            <div class="flex wrap gap-24">
+                                <h3 class="font-regular font-s txt-color-1">Coderhouse</h3>
+                                <h3 class="font-regular font-s txt-color-1">11/2023 – 3/2024</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex column gap-8">
+                            <h3 class="font-semibold font-m txt-color-1">Start, Computação Gráfica</h3>
+                            <div class="flex wrap gap-24">
+                                <h3 class="font-regular font-s txt-color-1">Escola SAGA</h3>
+                                <h3 class="font-regular font-s txt-color-1">2013 - 2016</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex column gap-24">
+                <h1 class="font-semibold font-l txt-color-1">competências</h1>
+                <div class="flex wrap gap-32 C-254A">
+                    <ul class="flex column gap-4 list-none">
+                        <li class="font-regular font-m txt-color-1">Branding</li>
+                        <li class="font-regular font-m txt-color-1">Modelagem 3D</li>
+                        <li class="font-regular font-m txt-color-1">Social midia</li>
+                        <li class="font-regular font-m txt-color-1">Motion</li>
+                    </ul>
+                    <ul class="flex column gap-4 list-none">
+                        <li class="font-regular font-m txt-color-1">Wireframe</li>
+                        <li class="font-regular font-m txt-color-1">Fluxo de usuário</li>
+                        <li class="font-regular font-m txt-color-1">Protótipo</li>
+                        <li class="font-regular font-m txt-color-1">Mockup</li>
+                    </ul>
+                    <ul class="flex column gap-4 list-none">
+                        <li class="font-regular font-m txt-color-1">HTML5</li>
+                        <li class="font-regular font-m txt-color-1">CSS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex column gap-24">
+                <h1 class="font-semibold font-l txt-color-1">ferramentas</h1>
+                <div class="flex wrap gap-32 C-254A">
+                    <ul class="flex column gap-4 list-none">
+                        <li class="font-regular font-m txt-color-1">Figma</li>
+                        <li class="font-regular font-m txt-color-1">Adobe Illustrator</li>
+                        <li class="font-regular font-m txt-color-1">Adobe Photoshop</li>
+                        <li class="font-regular font-m txt-color-1">Affinity</li>
+                        <li class="font-regular font-m txt-color-1">Blender 3D</li>
+                        <li class="font-regular font-m txt-color-1">Adobe After Effects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex w-full color-2 justify-center align-center pl-24 pr-24 pb-32 pt-32">
+        <div class="flex row w-cont justify-between align-center">
+            <div class="flex row">
+                <h3 class="txt-menu font-regular font-s txt-color-1">Todos os direitos reservados | Matheus Silva 2026
+                </h3>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/pages.js"></script>
+</body>
+
+</html>

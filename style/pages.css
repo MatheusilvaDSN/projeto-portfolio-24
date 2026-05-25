@@ -1,0 +1,294 @@
+.bg-b{
+    background-color: var(--bg-color);
+}
+
+
+/* HEADER ---------------------------------------------------------------------------- */
+
+.header{
+    height: 98px;
+}
+
+.selected > .txt-menu{
+    font-weight: 600;
+}
+
+.txt-menu{
+    transition: 500ms;
+}
+
+.select:hover .txt-menu{
+    font-weight: 600;
+}
+
+.menu-mais{
+    display: none;
+}
+
+/* CONTEUDO ---------------------------------------------------------------------------- */
+
+    .cont{
+        margin-top: 128px;
+    }
+
+    .card-info{
+        transition: 500ms;
+    }
+
+    .card:hover .card-info{
+        padding: 8px 24px 24px 24px;
+    }
+
+    .txt-hover{
+        transition: 500ms;
+    }
+
+    .card:hover .txt-hover{
+        font-weight: 600;
+    }
+
+    img{
+        transition: 500ms;
+    }
+
+    .card:hover img{
+        transition: 500ms;
+        transform: scale(110%);
+    }
+
+    .h-img-card{
+        height: 374px
+    }
+
+    .h-img-cover{
+        height: 600px
+    }
+
+    .w-doc{
+        width: 700px;
+    }
+
+    .w-img-cont{
+        width: 606px;
+    }
+
+    .w-img-cont-2{
+        width: 800px;
+    }
+
+    .cover-sobre{
+        width: 608px;
+        height: 614px;
+    }
+
+    .visual{
+        margin-top: -16px;
+        
+    }
+
+    .visual > .h-img-card{
+        height: 489px;
+    }
+
+    .btn-hover, .btn-hover-2{
+        transition: 300ms;
+    }
+
+    .btn-hover:hover{
+        background-color: #494949;
+    }
+
+    .btn-hover-2:hover{
+        background-color: #d3d3d3;
+    }
+
+    /* sobre ------------------------------------------------------------------------------- */
+
+    .tlt-sobre{
+        bottom: 300px;
+    }
+
+    .tlt-sobre-2{
+        bottom: 100px;
+    }
+
+    .txt-sobre{
+        width: 608px;
+    }
+
+    .HD{
+        height: 816px;
+    }
+
+    .img-carr{
+        width: 300px;
+        height: 544px;
+    }
+
+    .img-size{
+        transform: scale(70%);
+    }
+
+    .card-sobre:hover img{
+        transition: 500ms;
+        filter: grayscale(0);
+        transform: scale(75%);
+    }
+
+    .slide{
+        animation: scroll 20s linear infinite;
+    }
+
+    @keyframes scroll{
+        0%{
+            transform: translateX(30%);
+        }
+         100%{
+            transform: translateX(calc(-20% - 8px));
+        }
+    }
+
+    .slide:hover{
+        animation-play-state: paused;
+    }
+
+    /* fortnite ---------------------------------------------------------------------------- */
+
+    /* .grid-graphic{
+        grid-template-columns: 55% 45% 2%;
+    } */
+    
+    .w-55--{
+        width: 55%;
+
+    }
+
+    .w-45--{
+        width: 45%;
+    }
+
+    .w-2--{
+        width: 2%;
+    }
+
+    /* CONTEUDO ---------------------------------------------------------------------------- */
+
+    @media (max-width: 1240px) {
+        .cont-cards, .cont-tlt{
+            width: 100%;
+        }
+    }
+
+    
+
+    @media (max-width: 1048px) {
+
+        .w-doc, .w-img-cont, .w-img-cont-2{
+            width: 100%;
+        }
+
+        .cont-cards{
+            grid-template-columns: 1fr;
+        }
+
+
+        .B-254A{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .h-cn{
+            height: 300px;
+        }
+
+        .h-img-cover{
+            height: 489px
+        }
+
+        #CI {
+            grid-area: CI;
+        }
+
+        #CN{
+            grid-area: CN;
+        }
+
+        .A-254A{
+            grid-template-rows: auto;
+            grid-template-areas:
+                "tlt"
+                "NC"
+                "TH"
+                "MS"
+                "CM"
+                "CAFE"
+                "LF"
+                "TC"
+                "BP";
+        }
+
+        #NC {
+            grid-area: NC;
+        }
+
+        #tlt{
+            grid-area: tlt;
+        }
+
+        #TH{
+            grid-area: TH;
+        }
+
+        #MS{
+            grid-area: MS;
+        }
+
+        #CM{
+            grid-area: CM;
+        }
+
+        #CAFE{
+            grid-area: CAFE;
+        }
+
+        #LF{
+            grid-area: LF;
+        }
+
+        #TC{
+            grid-area: TC;
+        }
+
+        #BP{
+            grid-area: BP;
+        }
+
+        .visual{
+            margin-top: 0px;
+        }
+
+        .C-254A{
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+    }
+
+    @media (max-width: 544px) {
+        .visual > .h-img-card{
+            height: 362px;
+        }
+
+        .logo-size{
+            width: 240px;
+        }
+
+        .menu-mais{
+            display: flex;
+        }
+
+        .menu{
+            display: none;
+        }
+    }

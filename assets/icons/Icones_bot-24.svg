@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.07,13.93a.5.5,0,0,0-.71,0L12.5,19.79V3a.5.5,0,0,0-1,0V19.79L5.64,13.93a.5.5,0,0,0-.71.71l6.72,6.71a.36.36,0,0,0,.16.11.47.47,0,0,0,.38,0,.36.36,0,0,0,.16-.11l6.72-6.71A.5.5,0,0,0,19.07,13.93Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1E1E1E;}
+</style>
+<path class="st0" d="M19.1,13.9c-0.2-0.2-0.5-0.2-0.7,0c0,0,0,0,0,0l-5.9,5.9V3c0-0.3-0.2-0.5-0.5-0.5S11.5,2.7,11.5,3v16.8
+	l-5.9-5.9c-0.2-0.2-0.5-0.2-0.7,0s-0.2,0.5,0,0.7l6.7,6.7c0,0.1,0.1,0.1,0.2,0.1c0.1,0.1,0.3,0.1,0.4,0c0.1,0,0.1-0.1,0.2-0.1
+	l6.7-6.7C19.3,14.4,19.3,14.1,19.1,13.9C19.1,13.9,19.1,13.9,19.1,13.9z"/>
+</svg>

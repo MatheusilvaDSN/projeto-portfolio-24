@@ -2,226 +2,227 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Portfólio, matheusilva, design, ux/ui, html, css">
     <meta name="description" content="...">
-    <link rel="icon" href="../assets/favicon/favicon_logo.svg">
-    <link rel="stylesheet" href="../output.css">
-    <title>Fortnite | Portfólio</title>
+    <link rel="icon" href="../assets/logo/favicon_logo.svg">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/type.css">
+    <link rel="stylesheet" href="../style/pages.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+    </style>
+    <title>Portfólio | Fortnite</title>
 </head>
 
-<body class="relative">
-
-    <!-- HEADER--------------------------------------------------------------------------------------------------- -->
-    <header
-        class="flex fixed z-10 w-full h-[104px] bg-(--suport-color) justify-center border-b-1 border-solid border-(--primary-color)">
-        <div class="flex w-[1232px] justify-between items-center mq-w-100 px-[24px]">
+<body class="flex column relative bg-b">
+    <header class="flex w-full fixed color-2 justify-center align-center index-10 px-24 top-0">
+        <nav class="header flex row w-cont justify-between align-center">
             <a href="../index.html">
-                <img src="/assets/favicon/favicon_logo.svg" alt="">
+                <img class="logo-size" src="../assets/logo/logo.svg" alt="">
             </a>
-            <div class="flex w-auto gap-[8px]">
-                <a href="../index.html" class="selectable flex w-[100px] relative justify-center items-center">
-                    <h3 class="font-regular text-[24px] text-(--primary-color) txt-menu">início</h3>
-                    <div class="flex line-menu absolute bottom-[-2px]"></div>
+            <div class="flex row gap-16 menu">
+                <a class="select flex decoration-none" href="../index.html">
+                    <h3 class="txt-menu font-regular font-s txt-color-1">inicio</h3>
                 </a>
-                <a href="#" class="selectable flex w-[100px] relative justify-center items-center">
-                    <h3 class="font-regular text-[24px] text-(--primary-color) txt-menu">sobre</h3>
-                    <div class="flex line-menu absolute bottom-[-2px]"></div>
+                <a class="select flex decoration-none" href="./sobre.html">
+                    <h3 class="txt-menu font-regular font-s txt-color-1">sobre</h3>
                 </a>
             </div>
-        </div>
+
+            <div class="btn__menu flex menu-mais border b-1 pt-8 pl-8 pb-8 pr-8 decoration-none" onclick="clickMenu()">
+                <img id="icon__js" class="icon-size-24" src="../assets/icons/Icones_mais-24.svg" alt="">
+            </div>
+        </nav>
     </header>
-    <!-- COVER ----------------------------------------------------------------------------------------------------- -->
-    <main class="flex w-full bg-(--primary-color) justify-center relative">
-        <div class="grid grid-cols-2 flex-mq reverse">
-            <div class="w-full h-[704px] cover-mq"></div>
-            <div class="flex w-full h-[704px] cover-mq overflow-hidden justify-center items-center">
-                <img class="w-full" src="../assets/cover/capaFort.webp" alt="">
-            </div>
+    <div id="menu__js" class="none column color-2 fixed vh-100 vw-100 index-5">
+        <div class="flex column justify-center align-center gap-24 vh-100">
+            <a class="select flex decoration-none" href="../index.html">
+                <h3 class="txt-menu font-regular font-menu txt-color-1">inicio</h3>
+            </a>
+            <a class="select flex decoration-none" href="./sobre.html">
+                <h3 class="txt-menu font-regular font-menu txt-color-1">sobre</h3>
+            </a>
         </div>
-        <div class="flex flex-col absolute w-[1232px] h-auto gap-[24px] mq-w-100 px-[24px] bottom-[64px]">
-            <div class="flex flex-col">
-                <h2 class="font-bold text-[40px] text-(--suport-color)">Fortnite</h2>
-                <h2 class="font-regular text-[40px] text-(--suport-color)">Estudo de caso</h2>
-            </div>
-            <div class="flex">
-                <h3
-                    class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color)">
-                    webdesign</h3>
-                <h3
-                    class="font-light text-[24px] px-[16px] py-[12px] border-1 border-solid text-(--suport-color) rounded-full">
-                    2024</h3>
-            </div>
-        </div>
-    </main>
+    </div>
+    <!-- conteudo -->
+    <section class="flex column w-full justify-center align-center mt-98 px-24">
 
-    <!-- INFOS ----------------------------------------------------------------------------------------------------- -->
-    <section class="flex w-full justify-center items-center relative flex-col">
-        <div class="grid grid-cols-3 w-[1232px] gap-[24px] px-[24px] py-[64px] mq-w-100 flex-mq">
-            <div class="flex flex-col gap-[12px]">
-                <img class="size-[48px] i-color" src="../assets/icons/Icones_circulo-48.svg" alt="">
-                <div class="flex flex-col gap-[4px]">
-                    <h2 class="font-bold text-[24px] text-(--primary-color) txt-16px">Tempo de <br> desenvolvimento
-                    </h2>
-                    <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">3 meses</p>
+        <div class="flex relative justify-center">
+            <div class="grid grid-columns absolute w-cont cont-tlt bot-0 C-254A">
+                <div class="flex column gap-16 align-start cont-tlt pb-48 ">
+                    <div class="flex column gap-4">
+                        <h2 class="font-semibold font-l txt-color-1 txt-hover">Fortnite</h2>
+                        <h2 class="font-regular font-l txt-color-1 txt-hover">Estudo de caso</h2>
+                    </div>
+                    <div class="flex gap-16">
+                        <h2 class="font-regular font-m txt-color-1 txt-hover">webdesign</h2>
+                        <h2 class="font-regular font-m txt-color-1 txt-hover">2024</h2>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-[12px]">
-                <img class="size-[48px] i-color" src="../assets/icons/Icones_quadrado-48.svg" alt="">
-                <div class="flex flex-col gap-[4px]">
-                    <h2 class="font-bold text-[24px] text-(--primary-color) txt-16px">O meu papel</h2>
-                    <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Wireframe,
-                        componetização, prototipos e desenvolvimento da homepage.</p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-[12px]">
-                <img class="size-[48px] i-color" src="../assets/icons/Icones_triangulo-48.svg" alt="">
-                <div class="flex flex-col gap-[4px]">
-                    <h2 class="font-bold text-[24px] text-(--primary-color) txt-16px">Ferramentas</h2>
-                    <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Figma, VSCode, GitHub
-                    </p>
+            <div class="grid grid-columns not-my-24 B-254A">
+                <div id="CN" class="h-cn color-3"></div>
+                <div id="CI" class="flex justify-center align-center w-full over-hidden h-img-cover ">
+                    <img class="w-full" src="../assets/cover/capaFort.webp" alt="">
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col px-[24px] w-[1232px] mq-w-100">
-            <div class="w-full h-[1px] bg-(--secundary-color)"></div>
-            <div class="flex py-[24px] gap-[16px] flex-wrap">
-                <a target="_blank" href="https://fastdeath.github.io/projeto-final-grupo-2/"
-                    class="flex pl-[16px] pr-[10px] py-[12px] gap-[12px] bg-(--primary-color) border-1 border-solid border-(--primary-color) rounded-full justify-center items-center btn-hover">
-                    <h4 class="font-regular text-[24px] text-(--suport-color) font-hover txt-16px">web page</h4>
-                    <img class="size-[32px] img-hover" src="../assets/icons/Icones_link-24.svg" alt="">
+        <div class="grid grid-columns-3 w-cont pt-64 pb-64 border b-b B-254A cont-tlt gap-32">
+            <div class="flex column gap-8 w-full">
+                <img class="icon-size-48" src="../assets/icons/Icones_circulo-48.svg" alt="">
+                <h3 class="font-medium font-m txt-color-1 ">Tempo de desenvolvimento</h3>
+                <h4 class="font-regular font-xs txt-color-1 ">3 meses</h4>
+            </div>
+            <div class="flex column gap-8 w-full">
+                <img class="icon-size-48" src="../assets/icons/Icones_quadrado-48.svg" alt="">
+                <h3 class="font-medium font-m txt-color-1 ">O meu papel</h3>
+                <h4 class="font-regular font-xs txt-color-1 ">Wireframe, componetização, prototipos e desenvolvimento da
+                    homepage</h4>
+            </div>
+            <div class="flex column gap-8 w-full">
+                <img class="icon-size-48" src="../assets/icons/Icones_triangulo-48.svg" alt="">
+                <h3 class="font-medium font-m txt-color-1 ">Ferramentas</h3>
+                <h4 class="font-regular font-xs txt-color-1 ">Figma, VSCode, GitHub</h4>
+            </div>
+        </div>
+
+        <div class="flex gap-16 wrap justify-start w-cont cont-tlt pt-16">
+            <a class="flex py-8 pr-8 pl-16 color-1 decoration-none align-center justify-center gap-4 btn-hover border b-1"
+                href="https://fastdeath.github.io/projeto-final-grupo-2/" target="_blank">
+                <h3 class="font-regular font-s txt-color-2 txt-hover">website</h3>
+                <img class="icon-size-32 f-invert" src="../assets/icons/Icones_link-24.svg" alt="">
+            </a>
+            <a class="flex py-8 pr-8 pl-16 color-1 decoration-none align-center justify-center gap-4 btn-hover border b-1"
+                href="https://www.figma.com/proto/A8vKg5RUORBn06WpKlt9es/projeto-final-grupo2?page-id=103%3A356&node-id=151-61&starting-point-node-id=151%3A61&t=tODWUQW302PJO517-1" target="_blank">
+                <h3 class="font-regular font-s txt-color-2 txt-hover">prótotipo</h3>
+                <img class="icon-size-32 f-invert" src="../assets/icons/Icones_link-24.svg" alt="">
+            </a>
+            <a class="flex py-8 pr-8 pl-16 color-1 decoration-none align-center justify-center gap-4 btn-hover border b-1"
+                href="https://github.com/Fastdeath/projeto-final-grupo-2/blob/main/index.html" target="_blank">
+                <h3 class="font-regular font-s txt-color-2 txt-hover">repositório</h3>
+                <img class="icon-size-32 f-invert" src="../assets/icons/Icones_link-24.svg" alt="">
+            </a>
+        </div>
+
+    </section>
+
+    <section class="flex column w-full justify-center align-center mt-128 gap-64 px-24 pb-64">
+        <div class="flex column w-cont cont-tlt gap-16">
+            <h1 class="font-semibold font-l txt-color-1 txt-hover">Sobre</h1>
+            <p class="font-regular font-xs txt-color-1">Esse projeto se trata de um case de estudo desenvolvido para o
+                curso da Coderhouse focado nos processos de desenvolvimento web utilizando HTML e CSS. Como projeto
+                final, foi desenvolvido uma página web responsiva cujo tema foi "Fortnite". Durante o processo, utilizei
+                o figma para criar wireframe, componentes e protótipo simples, assim como apliquei javascript para
+                interações com o usuário.</p>
+        </div>
+
+        <div class="grid grid-columns w-cont cont-tlt C-254A gap-64">
+            <div class="flex column cont-tlt gap-16">
+                <h1 class="font-semibold font-l txt-color-1 txt-hover">Objetivo</h1>
+                <p class="font-regular font-xs txt-color-1">Pensando em simplificar e modernizar a página web oficial do
+                    Fortnite, foi decidido deixar para atrás a estética que até o momento (dezembro de 2023) não
+                    condizia com a atual linguagem visual do game. Optamos por usar componentes mais modernos que fazem
+                    mais sentido e lembram o que hoje é o padrão dentro do jogo.</p>
+            </div>
+            <div class="flex column cont-tlt gap-16">
+                <h1 class="font-semibold font-l txt-color-1 txt-hover">Desafio</h1>
+                <p class="font-regular font-xs txt-color-1">Falta de conhecimento da população nos impactos de separar
+                    ou não separar resíduos residenciais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex column w-full justify-center align-center gap-98 px-24 py-64">
+        <div class="flex column w-cont cont-tlt gap-32">
+            <div class="flex column gap-16">
+                <h1 class="font-semibold font-l txt-color-1 txt-hover">Wireframe</h1>
+                <p class="font-regular font-xs txt-color-1">Umas das etapas mais importantes do projeto, foi a criação
+                    do wireframe, com base nele foi possivel estruturar os elementos do corpo do site.</p>
+            </div>
+            <img class="w-img-cont-2" src="../assets/fort-componentes/thumb-wireframe.webp" alt="">
+        </div>
+    </section>
+
+    <section class="flex column w-full justify-center align-center gap-98 px-24 color-3 py-64">
+        <div class="flex column w-cont cont-tlt gap-32">
+            <div class="flex column gap-16">
+                <h1 class="font-semibold font-l txt-color-1 txt-hover">UIKit</h1>
+                <p class="font-regular font-xs txt-color-1">Após definido qual estilo visual seria aplicado no projeto,
+                    chegou o momento de criar os componentes para futuramente construir um protótipo conciso. Para isso,
+                    elementos como botões, foram construídos visando assemelhar-se aos vistos dentro do jogo.
+                </p>
+            </div>
+            <img class="w-img-cont" src="../assets/fort-componentes/comps.webp" alt="">
+        </div>
+    </section>
+
+    <section class="flex column w-full justify-center align-center gap-98 px-24 py-64">
+        <div class="flex column w-cont cont-tlt gap-32">
+            <div class="flex column gap-16">
+                <h1 class="font-semibold font-l txt-color-1 txt-hover">Prototipo de alta fidelidade</h1>
+                <p class="font-regular font-xs txt-color-1">Com base no wireframe e com os componentes finalizados, foi
+                    possivel criar um protótipo que consegue materializar todos conceitos idealizados pela a equipe.
+                    Nessa etapa também foi necessário criar um protótipo mobile para facilitar o desenvolvimento
+                    responsivo.
+            </div>
+            <img class="w-img-cont-2" src="../assets/fort-componentes/thumb-prototipos.webp" alt="">
+            <div class="flex gap-16 wrap justify-start cont-tlt">
+                <a class="flex py-8 pr-8 pl-16 color-1 decoration-none align-center justify-center gap-4 btn-hover border b-1"
+                    href="https://www.figma.com/proto/A8vKg5RUORBn06WpKlt9es/projeto-final-grupo2?page-id=103%3A356&node-id=151-61&starting-point-node-id=151%3A61&t=tODWUQW302PJO517-1" target="_blank">
+                    <h3 class="font-regular font-s txt-color-2 txt-hover">ver versão desktop</h3>
+                    <img class="icon-size-32 f-invert" src="../assets/icons/Icones_link-24.svg" alt="">
                 </a>
-                <a target="_blank" href="https://www.figma.com/proto/A8vKg5RUORBn06WpKlt9es/projeto-final-grupo2?page-id=103%3A356&node-id=151-61&starting-point-node-id=151%3A61&t=tODWUQW302PJO517-1"
-                    class="flex pl-[16px] pr-[10px] py-[12px] gap-[12px] bg-(--primary-color) border-1 border-solid border-(--primary-color) rounded-full justify-center items-center btn-hover">
-                    <h4 class="font-regular text-[24px] text-(--suport-color) font-hover txt-16px">prótotipo</h4>
-                    <img class="size-[32px] img-hover" src="../assets/icons/Icones_link-24.svg" alt="">
-                </a>
-                <a href="https://github.com/Fastdeath/projeto-final-grupo-2/blob/main/index.html"
-                    class="flex pl-[16px] pr-[10px] py-[12px] gap-[12px] bg-(--primary-color) border-1 border-solid border-(--primary-color) rounded-full justify-center items-center btn-hover">
-                    <h4 class="font-regular text-[24px] text-(--suport-color) font-hover txt-16px">repositório</h4>
-                    <img class="size-[32px] img-hover" src="../assets/icons/Icones_link-24.svg" alt="">
+                <a class="flex py-8 pr-8 pl-16 color-1 decoration-none align-center justify-center gap-4 btn-hover border b-1"
+                    href="https://www.figma.com/proto/A8vKg5RUORBn06WpKlt9es/projeto-final-grupo2?page-id=103%3A356&node-id=551-137&starting-point-node-id=551%3A137&t=tODWUQW302PJO517-1&show-proto-sidebar=1" target="_blank">
+                    <h3 class="font-regular font-s txt-color-2 txt-hover">ver versão mobile</h3>
+                    <img class="icon-size-32 f-invert" src="../assets/icons/Icones_link-24.svg" alt="">
                 </a>
             </div>
         </div>
     </section>
-    <!-- CONTEUDO--------------------------------------------------------------------------------------------------- -->
-    <section class="flex flex-col w-full justify-center items-center mt-[176px] gap-[100px]">
-        <div class="flex flex-col w-[1232px] gap-[16px] px-[24px] mq-w-100">
-            <h2 class="font-bold text-[40px] text-(--primary-color) txt-32px">Sobre</h2>
-            <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Esse projeto se trata de um
-                case de estudo desenvolvido para o curso da Coderhouse focado nos processos de desenvolvimento web
-                utilizando HTML e CSS. Como projeto final, foi desenvolvido uma página web responsiva cujo tema foi
-                "Fortnite". Durante o processo, utilizei o figma para criar wireframe, componentes e protótipo simples,
-                assim como apliquei javascript para interações com o usuário.
-            </p>
-        </div>
-        <div class="grid grid-cols-2 w-[1232px] gap-[60px] px-[24px] mq-w-100 flex-mq">
-            <div class="flex flex-col gap-[16px]">
-                <h2 class="font-bold text-[40px] text-(--primary-color) txt-32px">Objetivo</h2>
-                <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Pensando em simplificar e
-                    modernizar a página web oficial do Fortnite, foi decidido deixar para atrás a estética que até o
-                    momento (dezembro de 2023) não condizia com a atual linguagem visual do game. Optamos por usar
-                    componentes mais modernos que fazem mais sentido e lembram o que hoje é o padrão dentro do jogo.
-                </p>
-            </div>
-            <div class="flex flex-col gap-[16px]">
-                <h2 class="font-bold text-[40px] text-(--primary-color) txt-32px">Desafio</h2>
-                <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Visto que a vasta variedade
-                    de modos de jogo e conteúdo, a atual página (dezembro de 2023) tende a ser um tanto confusa ou até
-                    mesmo desafiadora para novos jogadores.
-                </p>
-            </div>
-        </div>
 
-        <div class="flex flex-col w-[1232px] gap-[16px] px-[24px] mq-w-100">
-            <h2 class="font-bold text-[40px] text-(--primary-color) txt-32px">Wireframe</h2>
-            <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Umas das etapas mais
-                importantes do projeto, foi a criação do wireframe, com base nele foi possivel estruturar os elementos
-                do corpo do site.
-            </p>
-            <img class="w-[700px] mt-[16px]" src="../assets/fort-componentes/thumb-wireframe.png" alt="">
-        </div>
-
-        <div class="flex flex-col w-[1232px] gap-[16px] px-[24px] mq-w-100">
-            <h2 class="font-bold text-[40px] text-(--primary-color) txt-32px">Componentes</h2>
-            <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Após definido qual estilo
-                visual seria aplicado no projeto, chegou o momento de criar os componentes para futuramente construir um
-                protótipo conciso. Para isso, elementos como botões, foram construídos visando assemelhar-se aos vistos
-                dentro do jogo.
-            </p>
-            <img class="w-[500px] mt-[16px]" src="../assets/fort-componentes/comps.png" alt="">
-        </div>
-
-        <div class="flex flex-col w-[1232px] gap-[16px] px-[24px] mq-w-100">
-            <h2 class="font-bold text-[40px] text-(--primary-color) txt-32px">Prototipo de alta fidelidade</h2>
-            <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Com base no wireframe e com os
-                componentes finalizados, foi possivel criar um protótipo que consegue materializar todos conceitos
-                idealizados pela a equipe. Nessa etapa também foi necessário criar um protótipo mobile para facilitar o
-                desenvolvimento responsivo.
-            </p>
-            <div class="flex gap-[16px] flex-mq mt-[16px]">
-                <img class="w-[700px]" src="../assets/fort-componentes/thumb-prototipo-desk.png" alt="">
-                <img class="w-[160px] h-fit" src="../assets/fort-componentes/thumb-prototipo-mb.png" alt="">
+    <section class="flex column w-full justify-center align-center gap-98 px-24 color-3 pt-64 pb-128">
+        <div class="flex column w-cont cont-tlt gap-32">
+            <div class="flex column gap-16">
+                <h1 class="font-semibold font-l txt-color-1 txt-hover">Linguagens usadas</h1>
+                <p class="font-regular font-xs txt-color-1">Para desenvolver o projeto, utilizamos majoritariamente
+                    HTML5 e CSS. Também foi necessário aplicar um pouco de javascript para interações simples com o
+                    usuário.
             </div>
-            <div class="flex gap-[16px] flex-wrap">
-                <a target="_blank" href=""
-                    class="flex pl-[16px] pr-[10px] py-[12px] gap-[12px] bg-(--primary-color) border-1 border-solid border-(--secundary-color) rounded-full justify-center items-center btn-hover">
-                    <h4 class="font-regular text-[24px] text-(--suport-color) font-hover txt-16px">ver versão desktop
-                    </h4>
-                    <img class="size-[32px] img-hover" src="../assets/icons/Icones_link-24.svg" alt="">
-                </a>
-                <a target="_blank" href=""
-                    class="flex pl-[16px] pr-[10px] py-[12px] gap-[12px] bg-(--primary-color) border-1 border-solid border-(--secundary-color) rounded-full justify-center items-center btn-hover">
-                    <h4 class="font-regular text-[24px] text-(--suport-color) font-hover txt-16px">ver versão mobile
-                    </h4>
-                    <img class="size-[32px] img-hover" src="../assets/icons/Icones_link-24.svg" alt="">
-                </a>
+            <div class="flex row h-8">
+                <div class="w-55-- color-css b-t b-r b-b b-l border"></div>
+                <div class="w-45-- color-html b-t b-r b-b border"></div>
+                <div class="w-2-- color-js b-t b-r b-b border"></div>
             </div>
-        </div>
-
-        <div class="flex flex-col w-[1232px] gap-[16px] px-[24px] mq-w-100">
-            <h2 class="font-bold text-[40px] text-(--primary-color) txt-32px">Linguagens usadas</h2>
-            <p class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">Para desenvolver o projeto,
-                utilizamos majoritariamente HTML5 e CSS. Também foi necessário aplicar um pouco de javascript para
-                interações simples com o usuário.
-            </p>
-            <div class="flex flex-col gap-[24px] mt-[16px]">
-                <div class="flex w-full h-[100px]">
-                    <div class="h-full w-[55%] border-2 border-solid border-(--css-color) rounded-full"></div>
-                    <div class="h-full w-[45%] border-2 border-solid border-(--html-color) rounded-full"></div>
-                    <div class="h-full w-[2%] border-2 border-solid border-(--js-color) rounded-full"></div>
+            <div class="flex gap-16 wrap justify-start cont-tlt">
+                <div class="flex gap-8 align-center">
+                    <img class="icon-size-32" src="../assets/icons/css.svg" alt="">
+                    <h3 class="font-medium font-xs txt-color-1">css 53.4%</h3>
                 </div>
-                <div class="flex flex-wrap gap-[24px]">
-                    <div class="flex gap-[12px] items-center">
-                        <img class="size-[32px]" src="../assets/icons/css.svg" alt="">
-                        <h3 class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">css 53.4%</h3>
-                    </div>
-                    <div class="flex gap-[12px] items-center">
-                        <img class="size-[32px]" src="../assets/icons/html.svg" alt="">
-                        <h3 class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">html5 45.8%</h3>
-                    </div>
-                    <div class="flex gap-[12px] items-center">
-                        <img class="size-[32px]" src="../assets/icons/js.svg" alt="">
-                        <h3 class="font-light text-[24px] text-(--secundary-color) mq-w-100 txt-16px">javaScript 0.8%
-                        </h3>
-                    </div>
+                <div class="flex gap-8 align-center">
+                    <img class="icon-size-32" src="../assets/icons/html.svg" alt="">
+                    <h3 class="font-medium font-xs txt-color-1">html5 45.8%</h3>
+                </div>
+                <div class="flex gap-8 align-center">
+                    <img class="icon-size-32" src="../assets/icons/js.svg" alt="">
+                    <h3 class="font-medium font-xs txt-color-1">javaScript 0.8%</h3>
                 </div>
             </div>
         </div>
     </section>
-    <!-- footer ----------------------------------------------------------------------------------------------------- -->
-    <footer
-        class="flex w-full h-[104px] bg-(--suport-color) justify-center mt-[176px] border-t-1 border-solid border-(--primary-color)">
-        <div class="flex w-[1232px] mq-w-100vw px-[24px] justify-between items-center">
-            <div class="flex w-auto gap-[8px]">
-                <h3 class="font-light text-[16px] text-(--primary-color)">Todos os direitos reservados | Matheus Silva
-                    2025</h3>
+
+    <footer class="flex w-full color-2 justify-center align-center pl-24 pr-24 pb-32 pt-32">
+        <div class="flex row w-cont justify-between align-center">
+            <div class="flex row">
+                <h3 class="txt-menu font-regular font-s txt-color-1">Todos os direitos reservados | Matheus Silva 2026
+                </h3>
             </div>
         </div>
     </footer>
+    <script src="../script/pages.js"></script>
 </body>
+
+</html>

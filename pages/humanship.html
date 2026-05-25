@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfólio, matheusilva, design, ux/ui, html, css">
+    <meta name="description" content="...">
+    <link rel="icon" href="../assets/logo/favicon_logo.svg">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/type.css">
+    <link rel="stylesheet" href="../style/pages.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+    </style>
+    <title>Portfólio | HumanShip Experience</title>
+</head>
+
+<body class="flex column relative bg-b">
+    <header class="flex w-full fixed color-2 justify-center align-center index-10 px-24 top-0">
+        <nav class="header flex row w-cont justify-between align-center">
+            <a href="../index.html">
+                <img class="logo-size" src="../assets/logo/logo.svg" alt="">
+            </a>
+            <div class="flex row gap-16 menu">
+                <a class="select flex decoration-none" href="../index.html">
+                    <h3 class="txt-menu font-regular font-s txt-color-1">inicio</h3>
+                </a>
+                <a class="select flex decoration-none" href="./sobre.html">
+                    <h3 class="txt-menu font-regular font-s txt-color-1">sobre</h3>
+                </a>
+            </div>
+
+            <div class="btn__menu flex menu-mais border b-1 pt-8 pl-8 pb-8 pr-8 decoration-none" onclick="clickMenu()">
+                <img id="icon__js" class="icon-size-24" src="../assets/icons/Icones_mais-24.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <div id="menu__js" class="none column color-2 fixed vh-100 vw-100 index-5">
+        <div class="flex column justify-center align-center gap-24 vh-100">
+            <a class="select flex decoration-none" href="../index.html">
+                <h3 class="txt-menu font-regular font-menu txt-color-1">inicio</h3>
+            </a>
+            <a class="select flex decoration-none" href="./sobre.html">
+                <h3 class="txt-menu font-regular font-menu txt-color-1">sobre</h3>
+            </a>
+        </div>
+    </div>
+    <!-- conteudo -->
+    <section class="flex column w-full justify-center align-center mt-98 px-24">
+
+        <div class="flex relative justify-center">
+            <div class="grid grid-columns absolute w-cont cont-tlt bot-0 C-254A">
+                <div class="flex column gap-16 align-start cont-tlt pb-48 ">
+                    <div class="flex column gap-4">
+                        <h2 class="font-semibold font-l txt-color-1 txt-hover">HumanShip</h2>
+                        <h2 class="font-semibold font-l txt-color-1 txt-hover">Experience</h2>
+                    </div>
+                    <div class="flex gap-16">
+                        <h2 class="font-regular font-m txt-color-1 txt-hover">ui/ux</h2>
+                        <h2 class="font-regular font-m txt-color-1 txt-hover">2026</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-columns not-my-24 B-254A">
+                <div id="CN" class="h-cn color-3"></div>
+                <div id="CI" class="flex justify-center align-center w-full over-hidden h-img-cover ">
+                    <img class="w-full" src="../assets/cover/capaHuman.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-columns-3 w-cont pt-64 pb-64 border b-b B-254A cont-tlt gap-32">
+            <div class="flex column gap-8 w-full">
+                <img class="icon-size-48" src="../assets/icons/Icones_circulo-48.svg" alt="">
+                <h3 class="font-medium font-m txt-color-1 ">Tempo de desenvolvimento</h3>
+                <h4 class="font-regular font-xs txt-color-1 ">2 semanas</h4>
+            </div>
+            <div class="flex column gap-8 w-full">
+                <img class="icon-size-48" src="../assets/icons/Icones_quadrado-48.svg" alt="">
+                <h3 class="font-medium font-m txt-color-1 ">O meu papel</h3>
+                <h4 class="font-regular font-xs txt-color-1 ">Wireframe, componetização, prototipação do website.</h4>
+            </div>
+            <div class="flex column gap-8 w-full">
+                <img class="icon-size-48" src="../assets/icons/Icones_triangulo-48.svg" alt="">
+                <h3 class="font-medium font-m txt-color-1 ">Ferramentas</h3>
+                <h4 class="font-regular font-xs txt-color-1 ">Figma</h4>
+            </div>
+        </div>
+
+        <div class="flex gap-16 wrap justify-start w-cont cont-tlt pt-16 pb-64">
+            <a class="flex py-8 pr-8 pl-16 color-1 decoration-none align-center justify-center gap-4 btn-hover border b-1"
+                href="" target="_blank">
+                <h3 class="font-regular font-s txt-color-2 txt-hover">website</h3>
+                <img class="icon-size-32 f-invert" src="../assets/icons/Icones_link-24.svg" alt="">
+            </a>
+            <a class="flex py-8 pr-8 pl-16 color-1 decoration-none align-center justify-center gap-4 btn-hover border b-1"
+                href="https://www.figma.com/proto/SPs6LiJS1DqtR78FESjaIu/Projetos---UI-UX?node-id=113-3613&viewport=505%2C148%2C0.07&t=6o5mh63dWwCHNKWo-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=113%3A3613&page-id=7%3A19541" target="_blank">
+                <h3 class="font-regular font-s txt-color-2 txt-hover">prótotipo</h3>
+                <img class="icon-size-32 f-invert" src="../assets/icons/Icones_link-24.svg" alt="">
+            </a>
+        </div>
+
+    </section>
+
+    <footer class="flex w-full color-2 justify-center align-center pl-24 pr-24 pb-32 pt-32">
+        <div class="flex row w-cont justify-between align-center">
+            <div class="flex row">
+                <h3 class="txt-menu font-regular font-s txt-color-1">Todos os direitos reservados | Matheus Silva 2026
+                </h3>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/pages.js"></script>
+</body>
+
+</html>
